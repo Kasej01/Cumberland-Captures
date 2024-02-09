@@ -3,44 +3,83 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: antiquewhite !important;
+    /*background-color: antiquewhite !important;*/
+    background-color: white !important;
+    border-bottom: 1px solid #cccccc; /* Thickness of the underline */
+    padding-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .logo {
-    max-width: 10vw;
-    height: auto;
-    margin-bottom: 10px; /* Adjust margin as needed */
+  max-width: 10vw;
+  height: auto;
+  margin-bottom: 10px; /* Adjust margin as needed */
 }
 
 .navbar-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0px !important;
+}
+
+.navbar-nav {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
-
-.navbar-nav {
-    text-align: center;
     font-size: 1.25rem;
     font-weight: 700;
+
 }
 
-    .navbar-nav .nav-item {
-        margin: 0 10px;
-    }
+.navbar-nav .nav-item {
+  margin: 0 10px;
+}
 
-    .navbar-nav .nav-link {
-        color: #595959; /* Dark grey text color */
-    }
+.navbar-nav .nav-link {
+  color: #595959; /* Dark grey text color */
+}
 
-        .navbar-nav .nav-link:hover {
-            color: #000; /* Black text color on hover */
-        }
+.navbar-nav .nav-link:hover {
+  color: #000; /* Black text color on hover */
+}
 
-    .navbar-nav .nav-item.active .nav-link {
-        /* Additional styles for the underline */
-        position: relative;
-        border-bottom: 3px solid #000; /* Thickness of the underline */
-        padding-bottom: 5px; /* Distance from the text */
-        width: 100%; /* Set the width to 80% */
+.navbar-nav .nav-item.active .nav-link {
+  /* Additional styles for the underline */
+  position: relative;
+  border-bottom: 3px solid #000; /* Thickness of the underline */
+  padding-bottom: 5px; /* Distance from the text */
+  width: 100%; /* Set the width to 100% */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) and (min-width: 401px){
+  .logo {
+    max-width: 30vw; /* Adjust max-width for smaller screens */
+  }
+
+  .navbar-nav {
+    font-size: 1.3rem; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 400px) {
+    .logo {
+        max-width: 30vw; /* Adjust max-width for smaller screens */
     }
+    .navbar-nav {
+        font-size: 0.75rem;
+        flex-direction: column !important;
+    }
+}
+
+/* Media query for larger screens */
+@media (max-width: 1000px) and (min-width: 401px) {
+    .navbar-nav {
+        flex-direction: row !important; /* Ensure horizontal alignment for larger screens */
+    }
+}
