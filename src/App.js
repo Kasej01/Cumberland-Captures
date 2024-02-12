@@ -5,7 +5,7 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
-import Schedule from './pages/Schedule';
+//import Schedule from './pages/Schedule';
 
 function App() {
     return (
@@ -16,7 +16,7 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/gallery" element={<Gallery />} />
                     <Route path="/contact" element={<Contact />} />
-                    <Route path="/schedule" element={<Schedule />} />
+                    {/* <Route path="/schedule" element={<Schedule />} /> */}
                 </Routes>
             </div>
         </Router>

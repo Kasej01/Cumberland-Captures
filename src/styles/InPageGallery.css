@@ -1,0 +1,9 @@
+.inpage-gallery-container{
+    margin: 5% 5%;
+    width: 50%;
+}
+
+.each-slide{
+    height: 40vw;
+    width: 60vw;
+}

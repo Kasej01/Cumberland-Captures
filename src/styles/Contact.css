@@ -1,0 +1,30 @@
+/* src/styles/Contact.css */
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .contact-info,
+  .contact-form {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+  }
+  
+  .contact-info h2,
+  .contact-form h2 {
+    color: #333;
+  }
+  
+  .contact-info p,
+  .contact-form p {
+    margin: 10px 0;
+  }
+  
+  .contact-form iframe {
+    border: none;
+  }
+  
