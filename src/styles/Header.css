@@ -6,15 +6,9 @@
     /*background-color: antiquewhite !important;*/
     background-color: white !important;
     border-bottom: 1px solid #cccccc; /* Thickness of the underline */
-    padding-bottom: 20px;
+    padding-bottom: 1vh;
     margin-right: 10px;
     margin-left: 10px;
-}
-
-.logo {
-  max-width: 10vw;
-  height: auto;
-  margin-bottom: 10px; /* Adjust margin as needed */
 }
 
 .navbar-brand {
@@ -23,6 +17,10 @@
   align-items: center;
   text-align: center;
   margin: 0px !important;
+}
+.navbar-brand .logo{
+  width: 8vw !important;
+  height: 8vw !important;
 }
 
 .navbar-nav {
@@ -57,8 +55,9 @@
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) and (min-width: 401px){
-  .logo {
-    max-width: 30vw; /* Adjust max-width for smaller screens */
+  .navbar-brand .logo {
+    width: 15vw !important; /* Adjust max-width for smaller screens */
+    height: 15vw !important;
   }
 
   .navbar-nav {
@@ -68,8 +67,9 @@
 
 /* Media queries for responsiveness */
 @media (max-width: 400px) {
-    .logo {
-        max-width: 30vw; /* Adjust max-width for smaller screens */
+    .navbar-brand .logo {
+        width: 22vw !important; /* Adjust max-width for smaller screens */
+        height: 22vw !important;
     }
     .navbar-nav {
         font-size: 0.75rem;

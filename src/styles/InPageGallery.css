@@ -1,9 +1,10 @@
 .inpage-gallery-container{
-    margin: 5% 5%;
-    width: 50%;
+    margin: 0 auto;
+    width: 42.5vw;
+    height: 25vw;
 }
 
 .each-slide{
-    height: 40vw;
-    width: 60vw;
+    height: 25vw;
+    width: 42.5vw;
 }

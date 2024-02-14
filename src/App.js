@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
+import Footer from './components/Footer';
 //import Schedule from './pages/Schedule';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
                     <Route path="/contact" element={<Contact />} />
                     {/* <Route path="/schedule" element={<Schedule />} /> */}
                 </Routes>
+                <Footer/>
             </div>
         </Router>
     );

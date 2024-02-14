@@ -25,7 +25,7 @@ const InpageGallery = () => {
   };
 
   return (
-    <div className="inpage-gallery-container" style={containerStyle}>
+    <div className="inpage-gallery-container">
       <div className="inpage-gallery">
         <Slide images={images} easing="ease" transitionDuration={1000}>
           {images.map((image, index) => (

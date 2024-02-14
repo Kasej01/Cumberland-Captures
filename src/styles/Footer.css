@@ -1,0 +1,58 @@
+  .text-small {
+    font-size: 0.9rem;
+  }
+  .text{
+    color: white;
+    text-decoration: none;
+  }
+  footer {
+    background: #333333;
+  }
+  .text-white{
+    color: white !important;
+  }
+
+  .logo {
+    width: 4vw !important; /* Adjust the size of the logo */
+    height: 4vw !important;
+    border-radius: 25%;
+    border: 4px solid white; /* Add a white border around the circle */
+    background: white;
+    margin: 1.5vw;
+}
+
+.first-column{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 1000px){
+  .col-lg-4{
+    width: 30vw;
+    margin-left: 5vw;
+    margin-bottom: 0;
+  }
+  .first-column{
+    display: none;
+  }
+  .row{
+    font-size: 0.5rem;
+  }
+  .row h2{
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 400px){
+  .col-lg-4{
+    width: 40vw;
+    margin-left: 3vw;
+    margin-bottom: 0;
+  }
+  .row{
+    font-size: 0.5rem;
+  }
+  .row h2{
+    font-size: 0.6rem;
+  }
+}

@@ -1,0 +1,48 @@
+/* src/styles/Gallery.css */
+
+.Gallery-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 5vw 5vw;
+}
+
+.Gallery-page-container h2 {
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+.Gallery-page-container p {
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.Sample-gallery-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.Sample-gallery-text{
+    margin-right: 5vw;
+}
+
+.Sample-gallery-text h2{
+    font-size: 3rem;
+}
+
+.Sample-gallery-text p{
+    font-size: 1.3rem;
+}
+
+/* Add this to your existing CSS file or create a new one */
+@media (max-width: 769px) {
+    .Sample-gallery-text h2{
+        font-size: 1.5rem;
+    }
+    
+    .Sample-gallery-text p{
+        font-size: 0.75rem;
+    }
+}
